@@ -1,0 +1,7 @@
+<Envelop xmlns=?http://schemas.xmlsoap.org/soap/envelop/?>  
+    <Body>  
+        <getCourseDetailRequest xmlns=?http://udemy.com/course?>  
+            <id>course1</id>  
+        <getCourseDetailRequest>  
+    </Body>  
+</Envelop>  

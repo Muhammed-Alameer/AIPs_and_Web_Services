@@ -1,0 +1,37 @@
+<definitions>	
+   <message name="TutorialRequest">
+      <part name="TutorialID" type="xsd:string"/>
+   </message>
+     
+   <message name="TutorialResponse">
+      <part name="TutorialName" type="xsd:string"/>
+   </message>
+
+   <portType name="Tutorial_PortType">
+      <operation name="Tutorial">
+         <input message="tns:TutorialRequest"/>
+         <output message="tns:TutorialResponse"/>
+      </operation>
+   </portType>
+
+   <binding name="Tutorial_Binding" type="tns:Tutorial_PortType">
+      <soap:binding style="rpc"
+         transport="http://schemas.xmlsoap.org/soap/http"/>
+      <operation name="Tutorial">
+         <soap:operation soapAction="Tutorial"/>
+         <input>
+            <soap:body
+               encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+               namespace="urn:examples:Tutorialservice"
+               use="encoded"/>
+         </input>
+         
+		 <output>
+            <soap:body
+               encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+               namespace="urn:examples:Tutorialservice"
+               use="encoded"/>
+         </output>
+      </operation>
+   </binding>
+</definitions>

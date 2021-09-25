@@ -1,0 +1,12 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV=?http://schemas.xmlsoap.org/soap/envelope/?>  
+          <SOAP-ENV:Header />             <!?empty header-->  
+           <SOAP-ENV:Body>                <!?body begin-->  
+                  <ns2:getCourseDetailsResponse xmlns:ns2=?http://in28mi> <!--content of the response-->  
+                   <ns2:course>  
+                    <ns2:id>Course1</ns2:id>  
+                    <ns2:name>Spring<ns2:name>  
+                    <ns2:description>10 Steps</ns1:description>  
+                    </ns2:course>  
+                    </ns2:getCourseDetailResponse>  
+               </SOAP-ENV:Body>       <!?body end-->  
+</SOAP-ENV:Envelope>  
